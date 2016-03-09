@@ -1,0 +1,44 @@
+{
+  "name": "kirei-css",
+  "version": "0.1.0",
+  "description": "a collection of postcss modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codekirei/kirei-css.git"
+  },
+  "keywords": [
+    "postcss"
+  ],
+  "author": "Jacob Blakely (codekirei)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codekirei/kirei-css/issues"
+  },
+  "homepage": "https://github.com/codekirei/kirei-css#readme",
+  "dependencies": {
+    "autoprefixer": "^6.3.3",
+    "lodash.merge": "^4.3.2",
+    "lost": "^6.7.2",
+    "postcss": "^5.0.19",
+    "postcss-alias-atrules": "0.0.0",
+    "postcss-brand-colors": "^0.4.0",
+    "postcss-calc": "^5.2.0",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-custom-selectors": "^3.0.0",
+    "postcss-define-units": "0.0.3",
+    "postcss-discard-empty": "^2.0.1",
+    "postcss-if-media": "^1.0.1",
+    "postcss-import": "^8.0.2",
+    "postcss-media-minmax": "^2.1.1",
+    "postcss-mixins": "^4.0.1",
+    "postcss-nested": "^1.0.0",
+    "postcss-responsive-type": "^0.3.3",
+    "postcss-round-subpixels": "^1.2.0",
+    "postcss-simple-vars": "^1.2.0",
+    "postcss-size": "^1.0.0"
+  }
+}
