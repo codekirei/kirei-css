@@ -1,0 +1,7 @@
+@custom-media --sm only screen and (max-width: 600px);
+
+@media (--sm) {
+  section {
+    margin: 0 10%;
+  }
+}
