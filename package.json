@@ -4,7 +4,7 @@
   "description": "a collection of postcss modules",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -40,5 +40,9 @@
     "postcss-round-subpixels": "^1.2.0",
     "postcss-simple-vars": "^1.2.0",
     "postcss-size": "^1.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.12.0",
+    "mz": "^2.3.1"
   }
 }
