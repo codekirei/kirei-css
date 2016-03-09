@@ -1,0 +1,16 @@
+.foo,
+.bar {
+  background: white;
+
+  & & {
+    background: red;
+  }
+
+  .baz {
+    background: green;
+  }
+
+  &:hover {
+    background: blue;
+  }
+}

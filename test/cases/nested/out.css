@@ -1,0 +1,13 @@
+.foo,
+.bar {
+  background: white;
+}
+.foo .foo, .bar .bar {
+  background: red;
+}
+.foo .baz, .bar .baz {
+  background: green;
+}
+.foo:hover, .bar:hover {
+  background: blue;
+}
