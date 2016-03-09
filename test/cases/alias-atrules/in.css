@@ -1,0 +1,8 @@
+@% size $len {
+  height: $len;
+  width: $len;
+}
+
+.foo {
+  @$ size 10px;
+}
