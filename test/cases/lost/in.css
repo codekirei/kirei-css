@@ -1,0 +1,7 @@
+.container {
+  lost-center: 960px;
+}
+
+.item {
+  lost-column: 1/4;
+}

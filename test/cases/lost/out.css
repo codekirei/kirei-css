@@ -1,0 +1,40 @@
+.container {
+  *zoom: 1;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container:before {
+  content: '';
+  display: table;
+}
+
+.container:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.item {
+  width: calc(99.99% * 1/4 - 23px);
+}
+
+.item:nth-child(1n) {
+  float: left;
+  margin-right: 30px;
+  clear: none;
+}
+
+.item:last-child {
+  margin-right: 0;
+}
+
+.item:nth-child(4n) {
+  margin-right: 0;
+  float: right;
+}
+
+.item:nth-child(4n + 1) {
+  clear: left;
+}
