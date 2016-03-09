@@ -1,0 +1,5 @@
+@media only screen and (600px < width <= 1200px) {
+  section {
+    margin: 0 6%;
+  }
+}
