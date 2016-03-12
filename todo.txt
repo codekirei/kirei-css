@@ -1,0 +1,5 @@
+- use postcss-prettify
+- finish tests (and switch to mocha)
+- ci
+- readme
+- npm
