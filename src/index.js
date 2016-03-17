@@ -37,12 +37,12 @@ const plugins = new Map([
 
 const kireiCss = postcss.plugin('kirei-css', (custom = {}) => {
   const instance = postcss()
-
   plugins.forEach((opts, plugin) => instance.use(require(plugin)(
     custom[plugin] ? merge(opts, custom[plugin]) : opts
   )))
-
   return instance
 })
+
+kireiCss.process = (css, opts) => postcss([kireiCss(opts)]).process(css)
 
 export default kireiCss
