@@ -26,6 +26,7 @@ const plugins = new Map([
   ['postcss-round-subpixels', {}],
   ['autoprefixer', {}],
   ['postcss-discard-empty', {}],
+  ['postcss-prettify', {}],
 ])
 
 module.exports = postcss.plugin('kirei-css', kireiOpts => {

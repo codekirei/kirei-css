@@ -2,12 +2,18 @@
 .bar {
   background: white;
 }
-.foo .foo, .bar .bar {
+
+.foo .foo,
+.bar .bar {
   background: red;
 }
-.foo .baz, .bar .baz {
+
+.foo .baz,
+.bar .baz {
   background: green;
 }
-.foo:hover, .bar:hover {
+
+.foo:hover,
+.bar:hover {
   background: blue;
 }

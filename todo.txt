@@ -1,5 +1,5 @@
-- use postcss-prettify
-- finish tests (and switch to mocha)
+- coverage
+- linting
 - ci
 - readme
 - npm

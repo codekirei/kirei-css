@@ -1,23 +1,24 @@
 // utils ---------------------------------------------------
 
-import test from 'ava'
-import kireiCss from '..'
-import postcss from 'postcss'
-import path from 'path'
-import { readFile, readdir } from 'mz/fs'
+const path = require('path')
+const assert = require('assert')
+const fs = require('mz/fs')
+const postcss = require('postcss')
+const kireiCss = require('..')
 
 // tests ---------------------------------------------------
 
 const processor = postcss([kireiCss])
 
 const read = (dir, file) =>
-  readFile(path.resolve('cases', dir, `${file}.css`), 'utf-8')
+  fs.readFile(path.resolve('test', 'cases', dir, `${file}.css`), 'utf-8')
 
-const run = testCase => test(testCase, function* runner(t) {
-  const raw = yield read(testCase, 'in')
-  const expected = yield read(testCase, 'out')
-  const actual = yield processor.process(raw)
-  t.same(actual.css, expected)
-})
-
-readdir(path.resolve('cases')).then(cases => cases.forEach(run))
+fs.readdirSync(path.resolve('test', 'cases'))
+  .forEach(test => {
+    exports[test] = function* testGenerator() {
+      const raw = yield read(test, 'in')
+      const expected = yield read(test, 'out')
+      const actual = yield processor.process(raw)
+      assert.equal(actual.css, expected)
+    }
+  })
