@@ -1,10 +1,10 @@
 // utils ---------------------------------------------------
 
-const path = require('path')
-const assert = require('assert')
-const fs = require('mz/fs')
-const postcss = require('postcss')
-const kireiCss = require('..')
+import path from 'path'
+import assert from 'assert'
+import fs from 'mz/fs'
+import postcss from 'postcss'
+import kireiCss from '../src'
 
 // tests ---------------------------------------------------
 

@@ -1,5 +1,9 @@
-const postcss = require('postcss')
-const merge = require('lodash.merge')
+// Modules ---------------------------------------------------------------------
+
+import postcss from 'postcss'
+import merge from 'lodash.merge'
+
+// Plugins ---------------------------------------------------------------------
 
 const aliases = {
   '%': 'define-mixin',
@@ -29,9 +33,10 @@ const plugins = new Map([
   ['postcss-prettify', {}],
 ])
 
-module.exports = postcss.plugin('kirei-css', kireiOpts => {
+// Aggregate and Export --------------------------------------------------------
+
+const kireiCss = postcss.plugin('kirei-css', (custom = {}) => {
   const instance = postcss()
-  const custom = kireiOpts || {}
 
   plugins.forEach((opts, plugin) => instance.use(require(plugin)(
     custom[plugin] ? merge(opts, custom[plugin]) : opts
@@ -39,3 +44,5 @@ module.exports = postcss.plugin('kirei-css', kireiOpts => {
 
   return instance
 })
+
+export default kireiCss
