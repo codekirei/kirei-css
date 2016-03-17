@@ -1,4 +1,5 @@
 - coverage
+- obviate postcss if not using other plugins (webpack compat?)
 - linting
 - ci
 - readme

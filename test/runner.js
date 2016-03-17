@@ -11,7 +11,7 @@ const kireiCss = require('..')
 const processor = postcss([kireiCss])
 
 const read = (dir, file) =>
-  fs.readFile(path.resolve('test', 'cases', dir, `${file}.css`), 'utf-8')
+  fs.readFile(path.resolve('test', 'cases', dir, `${file}.css`), 'utf8')
 
 fs.readdirSync(path.resolve('test', 'cases'))
   .forEach(test => {

@@ -1,0 +1,11 @@
+@bp --sm (max-width: 600px);
+
+@% brdr $len {
+  border: solid $len black;
+}
+
+@media (--sm) {
+  .foo {
+    @$ brdr 3px;
+  }
+}
