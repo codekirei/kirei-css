@@ -1,4 +1,3 @@
-- readme
 - changelog
 - npm
 - check webpack compatibility
