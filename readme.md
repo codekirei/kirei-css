@@ -11,7 +11,7 @@
 
 `kirei-css` is a [PostCSS](https://github.com/postcss/postcss) plugin collection that combines many of the popular PostCSS plugins in a functional order. Because plugin ordering is significant in PostCSS, be cautious when including `kirei-css` in a PostCSS plugin chain with other plugins &mdash; you are likely to run into conflicts.
 
-Also note that there is currently no documentation for CSS transformations this collection performs. That said, `kirei-css` is literally just a collection of other plugins. It doesn't do anything the included plugins aren't doing already, it just does all of those things together, letting you `require` one package instead of around twenty. Documentation will likely be added later &mdash; for now, you'll have to rely on each individual module's docs. The test suite may also be instructive.
+Also note that there is currently no documentation for the style transformations this collection performs. That said, `kirei-css` is literally just a collection of other plugins. It doesn't do anything the included plugins aren't doing already, it just does all of those things together, letting you `require` one module instead of having to `require` around twenty modules and hoping you have the order right. Documentation will likely be added later; for now, you'll have to rely on each individual module's docs and the test suite.
 
 **Plugins in the Collection**
 
