@@ -1,3 +1,7 @@
+------------------------------------------------------------
+Proprietary code:
+------------------------------------------------------------
+
 The MIT License (MIT)
 
 Copyright (c) 2016 Jacob Blakely (codekirei)
@@ -19,3 +23,28 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+------------------------------------------------------------
+This project makes extensive use of the following codebases:
+------------------------------------------------------------
+
+autoprefixer             | MIT
+lost                     | MIT
+postcss                  | MIT
+postcss-alias-atrules    | MIT
+postcss-brand-colors     | MIT
+postcss-calc             | MIT
+postcss-custom-media     | MIT
+postcss-custom-selectors | MIT
+postcss-define-units     | MIT
+postcss-discard-empty    | MIT
+postcss-if-media         | MIT
+postcss-import           | MIT
+postcss-media-minmax     | MIT
+postcss-mixins           | MIT
+postcss-nested           | MIT
+postcss-prettify         | MIT
+postcss-responsive-type  | MIT
+postcss-round-subpixels  | MIT
+postcss-simple-vars      | MIT
+postcss-size             | MIT
